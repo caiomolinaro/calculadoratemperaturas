@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora de Temperaturas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="theme-color" content="#2f7dc2">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/sitecss.css'>
+    <script src='js/calc.js'></script>
+</head>
+<body>
+    <div id="topo">
+      <h1>Calculadora de Temperaturas</h1>
+    </div>
+    <div id="corpo">
+      <!-- CELSIUS -->
+        <div id="celsius">
+          <form>
+          <p>Digite a temperatura em Graus Celsius:</p>
+          <br/><input class="valor" type="number" id="valorc" placeholder="ºC"/>
+          <select class="conta" id="contac">
+                <option value="f">Converter para ºF</option> 
+                <option value="k">Converter para K</option>
+          </select>
+          <br/>
+          <button class="btn" type="button" name="button" onclick="converterc()">Converter</button>
+          <p>Resultado: 
+            <span id="resultadoc"></span>
+          </p>
+          <p>Equação:
+            <span id="equacaoc"></span>
+          </p>
+          </form>
+        </div>
+      <!-- FAHRENHEIT -->  
+        <div id="fah">
+          <form>
+        <p>Digite a temperatura em Graus Fahrenheit:</p>
+        <br/><input class="valor" type="number" id="valorf" placeholder="ºF">
+        <select class="conta" id="contaf" name="fahs" class="sel">
+                <option value="c">Converter para ºC</option> 
+                <option value="k">Converter para K</option>
+          </select>
+          <br/>
+          <button class="btn" type="button" name="button" onclick="converterf()">Converter</button>
+          <p>Resultado: 
+              <span id="resultadof"></span>
+            </p>
+          <p>Equação:
+            <span id="equacaof"></span>
+          </p>
+        </form>
+        </div>
+      <!-- KELVIN -->          
+        <div id="kel">
+          <form>
+        <p>Digite a temperatura em Graus Kelvin:</p>
+        <br/><input class="valor" type="number" id="valork" placeholder="K"/>
+        <select class="conta" name="contak" id="contak" class="sel">
+                <option value="c">Converter para ºC</option> 
+                <option value="f">Converter para ºF</option>
+          </select>
+          <br/>
+          <button class="btn" type="button" name="button" onclick="converterk()">Converter</button>
+          <p>Resultado: 
+              <span id="resultadok"></span>
+            </p>          
+          <p>Equação:
+            <span id="equacaok"></span>
+          </p>
+          </form>
+        </div>  
+      </div>
+    <div id="rodape">
+        <p class="p1">Calculadora de temperaturas</p>
+    </div>
+</body>
+</html>
